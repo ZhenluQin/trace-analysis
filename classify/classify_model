@@ -15,14 +15,14 @@ test_file = "2222.csv"
 # label = [0, 1]
 #
 # def load_data(y_name='label'):
-#     """返回(train_x, train_y), (test_x, test_y)这种样子的数据 """
+#     """return (train_x, train_y), (test_x, test_y) """
 #
-#     # 指定CSV_COLUMN_NAMES为列名读取csv文件
+#     # deign the CSV_COLUMN_NAMES to input the csv
 #     train = pd.read_csv(train_file, names=CSV_COLUMN_NAMES, header=0)
-#     # train_x为前4列作为训练特征，train_y最后一列作为训练标签
+#     # train_x: features，train_y: label
 #     train_x, train_y = train, train.pop(y_name)
 #
-#     # 测试数据处理同上
+#     # test
 #     test = pd.read_csv(test_file, names=CSV_COLUMN_NAMES, header=0)
 #     test_x, test_y = test, test.pop(y_name)
 #
@@ -49,22 +49,22 @@ test_file = "2222.csv"
 #         steps=1000)
 #
 # def eval_input_fn(features, labels, batch_size):
-#     """一个评估和预测函数"""
+#     
 #     features=dict(features)
 #     if labels is None:
-#         # 没有标签就只用特征
+#         
 #         inputs = features
 #     else:
 #         inputs = (features, labels)
 #
-#     # 转成数据集.
+#     # generate dataset.
 #     dataset = tf.data.Dataset.from_tensor_slices(inputs)
 #
-#     # 批量处理文件
+#     # batch 
 #     assert batch_size is not None, "batch_size must not be None"
 #     dataset = dataset.batch(batch_size)
 #
-#     # 返回数据集
+#     # return
 #     return dataset.make_one_shot_iterator().get_next()
 
 def parse_csv(line):
@@ -93,7 +93,7 @@ model = tf.keras.Sequential([
   tf.keras.layers.Dense(10, activation="relu"),
   tf.keras.layers.Dense(3)])
 
-# 定义损失和梯度函数
+# loss and grad
 def loss(model, x, y):
   y_ = model(x)
   return tf.losses.sparse_softmax_cross_entropy(labels=y, logits=y_)
@@ -103,9 +103,9 @@ def grad(model, inputs, targets):
     loss_value = loss(model, inputs, targets)
   return tape.gradient(loss_value, model.variables)
 
-#创建优化器
+#optimizer
 optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.99997)
-#训练循环
+#train
 ## Note: Rerunning this cell uses the same model variables
 
 # keep results for plotting
