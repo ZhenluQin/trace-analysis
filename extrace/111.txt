@@ -1,0 +1,41 @@
+MPI_Init entering at walltime 949686.561132113, cputime 0.052776672 seconds in thread 0.
+int argc=2
+string argv[2]=["./src/mpiperf", "Bcast"]
+MPI_Init returning at walltime 949686.561132633, cputime 0.052777530 seconds in thread 0.
+MPI_Comm_size entering at walltime 949686.561429453, cputime 0.052810166 seconds in thread 0.
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+int size=16
+MPI_Comm_size returning at walltime 949686.561429978, cputime 0.052810906 seconds in thread 0.
+MPI_Comm_rank entering at walltime 949686.561433564, cputime 0.052814487 seconds in thread 0.
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+int rank=0
+MPI_Comm_rank returning at walltime 949686.561433983, cputime 0.052814926 seconds in thread 0.
+MPI_Wtime entering at walltime 949686.561448845, cputime 0.052829761 seconds in thread 0.
+MPI_Wtime returning at walltime 949686.561690136, cputime 0.052849310 seconds in thread 0.
+MPI_Get_processor_name entering at walltime 949686.561711225, cputime 0.052870527 seconds in thread 0.
+string name="jon-OptiPlex-3050"
+int resultlen=17
+MPI_Get_processor_name returning at walltime 949686.561712297, cputime 0.052871658 seconds in thread 0.
+MPI_Recv entering at walltime 949686.561716315, cputime 0.052875670 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=1
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.586595665, cputime 0.058372319 seconds in thread 0.
+MPI_Recv entering at walltime 949686.586605876, cputime 0.058382782 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=2
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.586607355, cputime 0.058384303 seconds in thread 0.
+MPI_Send entering at walltime 949686.896102935, cputime 0.108157235 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int dest=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Send returning at walltime 949686.896103377, cputime 0.108157675 seconds in thread 0.

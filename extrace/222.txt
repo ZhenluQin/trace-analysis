@@ -1,0 +1,324 @@
+MPI_Init entering at walltime 949686.561132113, cputime 0.052776672 seconds in thread 0.
+int argc=2
+string argv[2]=["./src/mpiperf", "Bcast"]
+MPI_Init returning at walltime 949686.561132633, cputime 0.052777530 seconds in thread 0.
+MPI_Comm_size entering at walltime 949686.561429453, cputime 0.052810166 seconds in thread 0.
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+int size=16
+MPI_Comm_size returning at walltime 949686.561429978, cputime 0.052810906 seconds in thread 0.
+MPI_Comm_rank entering at walltime 949686.561433564, cputime 0.052814487 seconds in thread 0.
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+int rank=0
+MPI_Comm_rank returning at walltime 949686.561433983, cputime 0.052814926 seconds in thread 0.
+MPI_Wtime entering at walltime 949686.561448845, cputime 0.052829761 seconds in thread 0.
+MPI_Wtime returning at walltime 949686.561690136, cputime 0.052849310 seconds in thread 0.
+MPI_Get_processor_name entering at walltime 949686.561711225, cputime 0.052870527 seconds in thread 0.
+string name="jon-OptiPlex-3050"
+int resultlen=17
+MPI_Get_processor_name returning at walltime 949686.561712297, cputime 0.052871658 seconds in thread 0.
+MPI_Recv entering at walltime 949686.561716315, cputime 0.052875670 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=1
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.586595665, cputime 0.058372319 seconds in thread 0.
+MPI_Recv entering at walltime 949686.586605876, cputime 0.058382782 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=2
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.586607355, cputime 0.058384303 seconds in thread 0.
+MPI_Recv entering at walltime 949686.586609349, cputime 0.058386287 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=3
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.586610046, cputime 0.058387001 seconds in thread 0.
+MPI_Recv entering at walltime 949686.586611386, cputime 0.058388336 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=4
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.586612612, cputime 0.058389565 seconds in thread 0.
+MPI_Recv entering at walltime 949686.586613968, cputime 0.058390920 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=5
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.586614639, cputime 0.058391594 seconds in thread 0.
+MPI_Recv entering at walltime 949686.586615936, cputime 0.058392885 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=6
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.616011529, cputime 0.061977530 seconds in thread 0.
+MPI_Recv entering at walltime 949686.616020619, cputime 0.061986939 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=7
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.616639230, cputime 0.062073536 seconds in thread 0.
+MPI_Recv entering at walltime 949686.616646141, cputime 0.062080712 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=8
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.616647261, cputime 0.062081836 seconds in thread 0.
+MPI_Recv entering at walltime 949686.616648814, cputime 0.062083386 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=9
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.616649383, cputime 0.062083962 seconds in thread 0.
+MPI_Recv entering at walltime 949686.616650613, cputime 0.062085186 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=10
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.616651017, cputime 0.062085596 seconds in thread 0.
+MPI_Recv entering at walltime 949686.616652219, cputime 0.062086790 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=11
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.616652673, cputime 0.062087252 seconds in thread 0.
+MPI_Recv entering at walltime 949686.616653880, cputime 0.062088454 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=12
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.616654358, cputime 0.062088937 seconds in thread 0.
+MPI_Recv entering at walltime 949686.616655486, cputime 0.062090059 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=13
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.616655940, cputime 0.062090518 seconds in thread 0.
+MPI_Recv entering at walltime 949686.616657055, cputime 0.062091628 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=14
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.616657690, cputime 0.062092267 seconds in thread 0.
+MPI_Recv entering at walltime 949686.616658945, cputime 0.062093515 seconds in thread 0.
+int count=128
+MPI_Datatype datatype=2 (MPI_CHAR)
+int source=15
+int tag=128
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.616659363, cputime 0.062093941 seconds in thread 0.
+MPI_Comm_rank entering at walltime 949686.616679269, cputime 0.062113768 seconds in thread 0.
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+int rank=0
+MPI_Comm_rank returning at walltime 949686.616679770, cputime 0.062114349 seconds in thread 0.
+MPI_Comm_split entering at walltime 949686.616681548, cputime 0.062116121 seconds in thread 0.
+MPI_Comm oldcomm=2 (MPI_COMM_WORLD)
+int color=0
+int key=0
+MPI_Comm newcomm=4 (user-defined-comm)
+MPI_Comm_split returning at walltime 949686.696110239, cputime 0.071484253 seconds in thread 0.
+MPI_Barrier entering at walltime 949686.696115593, cputime 0.071490056 seconds in thread 0.
+MPI_Comm comm=2 (MPI_COMM_WORLD)
+MPI_Barrier returning at walltime 949686.802826584, cputime 0.087057159 seconds in thread 0.
+MPI_Wtime entering at walltime 949686.802834258, cputime 0.087065092 seconds in thread 0.
+MPI_Wtime returning at walltime 949686.802835081, cputime 0.087065943 seconds in thread 0.
+MPI_Comm_rank entering at walltime 949686.802836302, cputime 0.087067162 seconds in thread 0.
+MPI_Comm comm=4 (user-defined-comm)
+int rank=0
+MPI_Comm_rank returning at walltime 949686.802836966, cputime 0.087067827 seconds in thread 0.
+MPI_Comm_size entering at walltime 949686.802837836, cputime 0.087068698 seconds in thread 0.
+MPI_Comm comm=4 (user-defined-comm)
+int size=16
+MPI_Comm_size returning at walltime 949686.802838229, cputime 0.087069088 seconds in thread 0.
+MPI_Barrier entering at walltime 949686.802839066, cputime 0.087069929 seconds in thread 0.
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Barrier returning at walltime 949686.896084417, cputime 0.108138473 seconds in thread 0.
+MPI_Comm_rank entering at walltime 949686.896086308, cputime 0.108140574 seconds in thread 0.
+MPI_Comm comm=4 (user-defined-comm)
+int rank=0
+MPI_Comm_rank returning at walltime 949686.896087152, cputime 0.108141453 seconds in thread 0.
+MPI_Comm_size entering at walltime 949686.896088024, cputime 0.108142326 seconds in thread 0.
+MPI_Comm comm=4 (user-defined-comm)
+int size=16
+MPI_Comm_size returning at walltime 949686.896088476, cputime 0.108142779 seconds in thread 0.
+MPI_Recv entering at walltime 949686.896089858, cputime 0.108144147 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int source=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.896092469, cputime 0.108146755 seconds in thread 0.
+MPI_Wtime entering at walltime 949686.896093877, cputime 0.108148179 seconds in thread 0.
+MPI_Wtime returning at walltime 949686.896094439, cputime 0.108148739 seconds in thread 0.
+MPI_Send entering at walltime 949686.896096169, cputime 0.108150463 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int dest=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Send returning at walltime 949686.896097303, cputime 0.108151601 seconds in thread 0.
+MPI_Recv entering at walltime 949686.896098362, cputime 0.108152660 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int source=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.896101409, cputime 0.108155701 seconds in thread 0.
+MPI_Wtime entering at walltime 949686.896101969, cputime 0.108156268 seconds in thread 0.
+MPI_Wtime returning at walltime 949686.896102399, cputime 0.108156700 seconds in thread 0.
+MPI_Send entering at walltime 949686.896102935, cputime 0.108157235 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int dest=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Send returning at walltime 949686.896103377, cputime 0.108157675 seconds in thread 0.
+MPI_Recv entering at walltime 949686.896103949, cputime 0.108158250 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int source=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.896106384, cputime 0.108160686 seconds in thread 0.
+MPI_Wtime entering at walltime 949686.896106928, cputime 0.108161229 seconds in thread 0.
+MPI_Wtime returning at walltime 949686.896107345, cputime 0.108161648 seconds in thread 0.
+MPI_Send entering at walltime 949686.896107846, cputime 0.108162145 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int dest=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Send returning at walltime 949686.896108253, cputime 0.108162555 seconds in thread 0.
+MPI_Recv entering at walltime 949686.896108803, cputime 0.108163103 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int source=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.896111279, cputime 0.108165574 seconds in thread 0.
+MPI_Wtime entering at walltime 949686.896111817, cputime 0.108166118 seconds in thread 0.
+MPI_Wtime returning at walltime 949686.896112204, cputime 0.108166504 seconds in thread 0.
+MPI_Send entering at walltime 949686.896112709, cputime 0.108167010 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int dest=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Send returning at walltime 949686.896113116, cputime 0.108167418 seconds in thread 0.
+MPI_Recv entering at walltime 949686.896113668, cputime 0.108167967 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int source=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.896116071, cputime 0.108170374 seconds in thread 0.
+MPI_Wtime entering at walltime 949686.896116618, cputime 0.108170919 seconds in thread 0.
+MPI_Wtime returning at walltime 949686.896117037, cputime 0.108171339 seconds in thread 0.
+MPI_Send entering at walltime 949686.896117536, cputime 0.108171838 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int dest=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Send returning at walltime 949686.896117944, cputime 0.108172244 seconds in thread 0.
+MPI_Recv entering at walltime 949686.896118509, cputime 0.108172809 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int source=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.896120904, cputime 0.108175205 seconds in thread 0.
+MPI_Wtime entering at walltime 949686.896121447, cputime 0.108175748 seconds in thread 0.
+MPI_Wtime returning at walltime 949686.896121867, cputime 0.108176170 seconds in thread 0.
+MPI_Send entering at walltime 949686.896122374, cputime 0.108176673 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int dest=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Send returning at walltime 949686.896122785, cputime 0.108177084 seconds in thread 0.
+MPI_Recv entering at walltime 949686.896123335, cputime 0.108177634 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int source=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.896125809, cputime 0.108180109 seconds in thread 0.
+MPI_Wtime entering at walltime 949686.896126347, cputime 0.108180648 seconds in thread 0.
+MPI_Wtime returning at walltime 949686.896126772, cputime 0.108181074 seconds in thread 0.
+MPI_Send entering at walltime 949686.896127279, cputime 0.108181579 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int dest=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Send returning at walltime 949686.896127690, cputime 0.108181990 seconds in thread 0.
+MPI_Recv entering at walltime 949686.896128249, cputime 0.108182538 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int source=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.896130618, cputime 0.108184919 seconds in thread 0.
+MPI_Wtime entering at walltime 949686.896131168, cputime 0.108185469 seconds in thread 0.
+MPI_Wtime returning at walltime 949686.896131585, cputime 0.108185889 seconds in thread 0.
+MPI_Send entering at walltime 949686.896132085, cputime 0.108186385 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int dest=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Send returning at walltime 949686.896132491, cputime 0.108186793 seconds in thread 0.
+MPI_Recv entering at walltime 949686.896133036, cputime 0.108187337 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int source=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)
+MPI_Status status=<IGNORED>
+MPI_Recv returning at walltime 949686.896135434, cputime 0.108189736 seconds in thread 0.
+MPI_Wtime entering at walltime 949686.896135977, cputime 0.108190277 seconds in thread 0.
+MPI_Wtime returning at walltime 949686.896136397, cputime 0.108190699 seconds in thread 0.
+MPI_Send entering at walltime 949686.896136901, cputime 0.108191203 seconds in thread 0.
+int count=1
+MPI_Datatype datatype=14 (MPI_DOUBLE)
+int dest=1
+int tag=128
+MPI_Comm comm=4 (user-defined-comm)

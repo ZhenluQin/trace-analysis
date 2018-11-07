@@ -1,0 +1,117 @@
+import os, sys
+import os.path
+import fileinput
+
+
+# deal with the text from string to list
+# the list's elements are the basic list from entering to the returning
+def dealway(mywf, mystr, mystr1):  #wf change mywf, str1 change mystr1, str change mystr
+    # for line in mywf.readlines():
+    ##################################
+    # with open(mywf, 'r',buffering=1024) as fileobject:
+    #     for line in fileobject.readlines():
+    ##########################
+    # fh = open(mywf, 'rt')
+    # line = fh.readline()
+    # while line:
+    ##################################
+    # for line in fileinput.input(mywf):
+    with open(mywf, 'r') as fp:
+        line = fp.readline()
+        while line:
+            if "entering" in line:
+                newline = line.replace(',', '')
+                newline = newline.replace('\n', ' ')
+                mystr += newline
+            elif "returning" in line:
+                mystr += line
+                mystr1.append(mystr.split(' '))
+                mystr = ''
+            elif "int count=" in line:
+                newline = line.replace('=', ' ')
+                newline = newline.replace('\n', ' ')
+                mystr += newline
+                # str += newline.strip('\n')
+            elif "MPI_Datatype" in line:
+                newline = line.replace('=', ' ')
+                newline = newline.replace('(', ' ')
+                newline = newline.replace(')', ' ')
+                newline = newline.replace('\n', ' ')
+                mystr += newline
+            else:
+                newline = line.replace(',', '')
+                newline = newline.replace('\n', ' ')
+                mystr += newline
+            line = fp.readline()
+            
+    fp.close()
+    return mystr1
+
+
+# calculate the every count in every 'MPI_' in the dictionary
+# sum all the information
+# count_dict---mycount_dict, count_num=mycount_num, count_label---mycount_label
+def way2count(mycount_total, mycount_dict, mycount_num, mycount_label):
+    for key in mycount_dict.keys():
+        if key == 'MPI_Recv':
+            index = mycount_label.index('MPI_Recv')
+            for i in range(len(mycount_num[index])):
+                mycount_total += int(mycount_num[index][i])
+        else:
+            index = mycount_label.index('MPI_Send')
+            for i in range(len(mycount_num[index])):
+                mycount_total += int(mycount_num[index][i])
+    return mycount_total
+
+
+# using the dealway to deal the path
+# using the way2cout to calculate the file's total count
+path = "/home/qliu/qzl/ubuntu/use_in_ubuntu/extrace"
+result_dict = {}
+dirs = os.listdir(path)
+for file in dirs:
+    if ".txt" in file:
+        print(file)
+        file_fullname = path + '/' +file
+        # file_fullname = open(path + '/' + file)
+        stri = ''
+        str1 = []
+        count_total = 0  # return this file's total count
+        dealway(file_fullname, stri, str1)
+        # calculate the quantity of the list
+        #  for the quantity of the count and the databyte
+        count_dict = {}
+        j = 0
+        for i in range(len(str1)):
+            if 'count' in str1[i]:
+                # this sentence can drop out some operations from entering to returning
+                # but doesn't contains count and datatpe
+                key = str1[i][0]
+                mycount = int(str1[i][(str1[i].index('count') + 1)])
+                mydata = int(str1[i][(str1[i].index('datatype') + 1)])
+                mytoatl = mycount * mydata
+                count_dict.setdefault(key, []).append(mytoatl)
+                j += 1
+        print(j)
+        # print(count_dict)
+        # print(count_dict.values())
+        print(str1)
+
+        count_num = list(count_dict.values())  # statics the quantity for every 'MPI_'
+        count_label = list(count_dict.keys())  # statics for all class of the 'MPI_'
+        # print(count_num[0])
+        # print(count_label)
+        result = way2count(count_total, count_dict, count_num, count_label)
+        print(result)
+        result_dict[file] = result
+
+
+# input the result into the result.txt
+resultpath = "/home/qliu/qzl/ubuntu/use_in_ubuntu/extrace/result/result.txt"
+with open(resultpath, 'w') as wf2:
+    for key in result_dict:
+        print
+        key, result_dict[key]
+        wf2.write(key + ' ' + str(result_dict[key]) + '\n')
+print(result_dict)
+
